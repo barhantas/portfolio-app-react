@@ -18,8 +18,15 @@ export default function NavigatorButton({
 }
 
 export const StyledButton = styled(Button)`
+  cursor: pointer;
   margin: 10px;
   width: 200px;
   align-self: center;
   font-family: monospace;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+  &:hover {
+    transform: translateX(1.15em);
+  }
 `;

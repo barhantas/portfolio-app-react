@@ -8,7 +8,6 @@ export const AppWrapper = styled.div`
 
 export const PageWrapper = styled.div`
   height: 100vh;
-
   background: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +18,13 @@ export const PageImage = styled.div`
   margin: auto;
   background: transparent;
   flex: 1;
+  transform: translateX(-20%);
+  animation: slide-in 1s forwards;
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0%);
+    }
+  }
 `;
 
 export const PageContent = styled.div`
@@ -26,10 +32,18 @@ export const PageContent = styled.div`
   margin: auto;
   background: #ffffff;
   text-align: center;
+  transform: translateX(20%);
+  animation: slide-in 1s forwards;
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0%);
+    }
+  }
 `;
 
 export const PageContentTitle = styled.h3`
   font-family: fantasy;
+  text-transform: capitalize;
 `;
 
 export const IamWhatIamWrapper = styled.div`
