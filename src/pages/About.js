@@ -22,17 +22,12 @@ export default function About(props) {
         <NavigatorButton value="/" text="< Back to home" {...props} />
         <PageContentTitle>About</PageContentTitle>
         <IamWhatIamWrapper>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          I have a great passion for learning and exploring new things. I see
+          myself as an adaptive, social co-worker. Worked and working in groups.
+          Creating and fixing web and mobile applications used by thousands of
+          user user. I love discovering new countries and playing basketball. I
+          grew up in Yalova which is the smallest city of Turkey. I graduated
+          from Anadolu university as a Computer Engineer on August of 2017.
         </IamWhatIamWrapper>
       </PageContent>
     </PageWrapper>

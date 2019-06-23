@@ -68,3 +68,78 @@ export const SocialMediaButtonsWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
 `;
+
+export const ProjectsWrapper = styled.div`
+  font-size: 18px;
+  font-family: monospace;
+  height: 85vh;
+  overflow: scroll;
+`;
+
+export const StyledScrollImg = styled.img`
+  margin-top: -66px;
+  opacity: 0.8;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.85);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+`;
+
+export const StyledLink = styled.a`
+  color: inherit;
+  text-decoration: none;
+`;
+
+export const HoverIcon = styled.i`
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
+export const CompanyName = styled.h3`
+  border-top: 1px solid lightgrey;
+  display:inline-flex;
+
+`;
+
+export const WorkDate = styled.div`
+font-size:12px;
+padding-left:10px;
+`;
+
+export const JobTitle = styled.h5`
+  margin: 0;
+`;
+export const Department = styled.h6`
+  margin: 0;
+`;
+export const Responsibilities = styled.h6`
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Responsibility = styled.div``;
+
+export const Projects = styled.h6`
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Project = styled.div``;
+
+export const CompanyLogo = styled.img`
+  height: 40px;
+  width: 40px;
+`;

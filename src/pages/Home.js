@@ -9,6 +9,8 @@ import {
   ResponsiveImage,
   PageContentTitle,
   SocialMediaButtonsWrapper,
+  StyledLink,
+  HoverIcon
 } from '../components/StyledComponents';
 import NavigatorButton from '../components/NavigatorButton';
 
@@ -37,18 +39,19 @@ export default function Home(props) {
         <VerticalButtonWrapper>
           <NavigatorButton value="about" text="About" {...props} />
           <NavigatorButton value="work" text="Work" {...props} />
+          <NavigatorButton value="projects" text="Projects" {...props} />
           <NavigatorButton value="contact" text="Contact" {...props} />
         </VerticalButtonWrapper>
         <SocialMediaButtonsWrapper>
-          <a href={INSTAGRAM_URL}>
-            <i className="fab fa-instagram" />
-          </a>
-          <a href={GITHUB_URL}>
-            <i className="fab fa-github" />
-          </a>
-          <a href={LINKEDIN_URL}>
-            <i className="fab fa-linkedin-in" />
-          </a>
+          <StyledLink href={INSTAGRAM_URL} target="_blank">
+            <HoverIcon className="fab fa-instagram" />
+          </StyledLink>
+          <StyledLink href={GITHUB_URL} target="_blank">
+            <HoverIcon className="fab fa-github" />
+          </StyledLink>
+          <StyledLink href={LINKEDIN_URL} target="_blank">
+            <HoverIcon className="fab fa-linkedin-in" />
+          </StyledLink>
         </SocialMediaButtonsWrapper>
       </PageContent>
     </PageWrapper>
